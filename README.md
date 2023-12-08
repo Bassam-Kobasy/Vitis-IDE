@@ -62,9 +62,11 @@ sudo mkdir ~/Petabuilds
 
 cd ~/Petabuilds
 
-8- Open the root directory and open opt/Xilinx, you should see a file named xrt 
-open the terminal in the directory opt/Xilinx and type 
+8- to check if the xrt is installed or not open the  directory /opt/Xilinx, you should see a file named xrt 
+open the terminal in the directory opt/Xilinx and type
+
 sudo mkdir platforms
+
 then copy the  ZC702 Base 2019.2 file to platforms folder 
 in the same terminal type 
 cd platforms 
