@@ -19,6 +19,7 @@ Xilinx window should appear then click next and agree on all terms after that cl
 4- after the installation is finished, open the Xilinx website and download XRT through the following link
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-platforms/archive-vitis-embedded.html 
 and choose the suitable version for your Ubuntu 
+
 ![image](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/19b949ba-28c8-4a95-8d17-ccf1d0577a26)
 
 5- Download the required files of your board for example Zynq zc702
