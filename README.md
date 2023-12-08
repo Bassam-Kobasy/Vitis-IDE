@@ -1,6 +1,7 @@
 # Vitis-IDE
 This repo explains how to setup and install Vitis IDE for acceleration projects 
 Vitis ide version is 2019.2 and works on ubuntu 18.04
+
 1- install Xilinx_Unified_installer 2019.2 form the Xilinx website 
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/archive-vitis.html 
 ![image](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/717e44af-272c-4f2c-b8e0-2fbdfefdcbc3)
