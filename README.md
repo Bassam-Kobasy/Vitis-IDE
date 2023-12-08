@@ -13,9 +13,13 @@ sudo apt install libtinfo5
 sudo apt install libncurses5
 
 3- open the terminal in the directory of the installed file 
+
 Extract the file and search for xsetup file
+
 then run the installed file
+
 sudo ./xsetup
+
 Xilinx window should appear then click next and agree on all terms after that click next choose the first option "Vitis", then keep clicking next till it starts to install the program 
 
 4- after the installation is finished, open the Xilinx website and download XRT through the following link
