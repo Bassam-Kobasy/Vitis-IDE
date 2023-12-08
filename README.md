@@ -48,13 +48,20 @@ sudo apt-get install opencl-headers
 
 sudo apt-get install ocl-icd-opencl-dev
 
-7- Install the XRT file that you have downloaded through the command 
-sudo apt install ./xrt_2019...
+7- Install the XRT file that you have downloaded through the command
+
+sudo apt install ./xrt_201920.2.3.1301_18.04-xrt.deb
+
 after finishing the installation download the repo of xrt by typing in the terminal 
+
 git clone --branch 2019.2 https://github.com/Xilinx/XRT.git 
+
 then type 
+
 Mkdir ~/Petabuilds
+
 Cd ~/Petabuilds
+
 8- Open the root directory and open opt/Xilinx, you should see a file named xrt 
 open the terminal in the directory opt/Xilinx and type 
 sudo mkdir platforms
