@@ -24,8 +24,10 @@ Xilinx window should appear then click next and agree on all terms after that cl
 
 after installation, the license manager will be opened 
 add your license, then open terminal and type
+
 cd /tools/Xilinx/xic/scripts
- sudo ./installAIeDepLibs.sh
+
+sudo ./installAIeDepLibs.sh
 
 4- after the installation is finished, open the Xilinx website and download XRT through the following link
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-platforms/archive-vitis-embedded.html 
@@ -39,8 +41,11 @@ https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav
 ![image](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/a5ee890a-66e1-46bc-b7fa-51f204bb9ca0)
 
 6- In the terminal install the following libraries:
+
 sudo apt-get install ocl-icd-libopencl1
+
 sudo apt-get install opencl-headers
+
 sudo apt-get install ocl-icd-opencl-dev
 
 7- Install the XRT file that you have downloaded through the command 
