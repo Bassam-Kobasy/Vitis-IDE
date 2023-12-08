@@ -58,9 +58,9 @@ git clone --branch 2019.2 https://github.com/Xilinx/XRT.git
 
 then type 
 
-Mkdir ~/Petabuilds
+sudo mkdir ~/Petabuilds
 
-Cd ~/Petabuilds
+cd ~/Petabuilds
 
 8- Open the root directory and open opt/Xilinx, you should see a file named xrt 
 open the terminal in the directory opt/Xilinx and type 
