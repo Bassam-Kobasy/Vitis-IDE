@@ -67,42 +67,68 @@ open the terminal in the directory opt/Xilinx and type
 
 sudo mkdir platforms
 
-then copy the  ZC702 Base 2019.2 file to platforms folder 
-in the same terminal type 
-cd platforms 
-sudo unzip -q  ZC702 Base 2019.2
+then copy the  zc702_base_2019.2.zip file to platforms folder 
 
-9- extract the Base Platform Cross-Compilation file and run sdk.sh file 
+in the same terminal type 
+
+cd platforms 
+
+sudo unzip -q  zc702_base_2019.2.zip
+
+9- extract the Base Platform Cross-Compilation file (sysroots_scripts.tar.gz) and run sdk.sh file 
+
 sudo ./sdk.sh
 
-10- open the terminal and type 
-cd /tools/Xilinx/Vivado/2019.2
-source settings64.sh 
-vivado
-The Vivado window should appear 
-open license manager choose load license and browse your license file which is named xilinxlc.li
+10- Open the terminal and type 
 
-11- Open the terminal and type 
 source /tools/Xilinx/Vitis/2019.2/settings64.sh
+
 source /opt/xilinx/xrt/setup.sh
-then open the dirctory of the xrt repo that you have download any type 
+
+then open the directory of the xrt repo that you have downloaded any type
+
 cd <xrt_repo_directory>/XRT/src/runtime_src/tools/scripts 
+
 you should find a file named xsa_build.sh
 open the file and add the path link of the zc702_base_xsa.tcl(search about it in zc702_base folder)
+
+![WhatsApp Image 2023-12-08 at 8 59 00 AM](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/7e99a086-f03c-4ce5-b524-c0256feb10ce)
+
 then run the xsa_build.sh file by typing 
 <xrt_repo_directory>/XRT/src/runtime_src/tools/scripts/xsa_build.sh 
 
-12- Download  PetaLinux 2019.2 Installer from the Xilinx website through the following link
+11- Download  PetaLinux 2019.2 Installer from the Xilinx website through the following link
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools/archive.html
 ![image](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/7938b202-063c-4409-8611-289eec70ad52)
-change the permission of the file by typing 
-sudo chmod +x  PetaLinux 2019.2 Installer
-then run it by typing 
-./ PetaLinux 2019.2 Installer
-then type 
-Source /petalinux/2019.2/settings.sh
+
+to install petalinux you should follow this guid 
+https://docs.xilinx.com/v/u/2019.2-English/ug1144-petalinux-tools-reference-guide 
+*some tips for installing petalinux 
+  1- you can install all required packages through this command 
+  sudo apt-get install dos2unix iproute2 gawk make net-tools libncurses5-dev tftpd zlib1g:i386 libssl-dev flex bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo zlib1g-dev gcc-multilib build-essential screen pax gzip python 2.7.5
+  2- make sure to make the petalinux-v2019.2-final-installer.run file and the installation dirctory are not root using the following comand 
+  
+  sudo chown <user>:<user> petalinux-v2019.2-final-installer.run
+  
+  sudo chown <user>:<user> /opt/pkg/petalinux/2019.2
+  
+  on my Ubuntu it will be 
+  
+  sudo chown basssam:bassam petalinux-v2019.2-final-installer.run
+  
+  sudo chown bassam:bassam /opt/pkg/petalinux/2019.2
+
+  3- if you faced any error in installation of petalinux make sure to delete petalinux_installation_log file before solving the error
+  
+
+12- then type 
+source /opt/pkg/petalinux/2019.2/settings.sh
 <xrt_repo_directory>/XRT/src/runtime_src/tools/scripts/peta_build.sh --bsp
-./xsa_build/<platform name>/<platform name>.xsa
+./xsa_build/zc702_base/zc702_base.xsa
+
+13- download y2k22_patch-1.2.zip 
+follow the following link
+https://support.xilinx.com/s/article/76960?language=en_US
 
 # Finally vitis ide is now installed 
 you can open it by opening the terminal and type 
