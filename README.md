@@ -7,7 +7,9 @@ https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav
 ![WhatsApp Image 2023-12-08 at 6 05 27 AM](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/f07c75bf-95c4-4f51-88a6-40b366bcf1c7)
 
 2-Install the following libraries:
+
 sudo apt install libtinfo5
+
 sudo apt install libncurses5
 
 3- open the terminal in the directory of the installed file 
