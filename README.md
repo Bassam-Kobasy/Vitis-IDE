@@ -2,18 +2,17 @@
 This repo explains how to setup and install Vitis IDE for acceleration projects 
 Vitis ide version is 2019.2 and works on Ubuntu 18.04
 
-1- install Xilinx_Unified_installer 2019.2 from the Xilinx website 
+1- install Xilinix_Unified_2019 from the Xilinx website 
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vitis/archive-vitis.html 
-![image](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/717e44af-272c-4f2c-b8e0-2fbdfefdcbc3)
+![WhatsApp Image 2023-12-08 at 6 05 27 AM](https://github.com/Bassam-Kobasy/Vitis-IDE/assets/103467132/f07c75bf-95c4-4f51-88a6-40b366bcf1c7)
 
-2- after installing it, change the permission of the file by right click on the file going to permission tap, and marking the "Allow execution file as program" option  
-
-3- open the terminal in the directory of the installed file 
+2- open the terminal in the directory of the installed file 
+Extract the file and search for xsetup file
 Install the following libraries:
 sudo apt install libtinfo5
 sudo apt install libncurses5
 then run the installed file
-sudo ./Xilinx_Unified_2019.2.bin
+sudo ./xsetup
 Xilinx window should appear then click next and agree on all terms after that click next choose the first option "Vitis", then keep clicking next till it starts to install the program 
 
 4- after the installation is finished, open the Xilinx website and download XRT through the following link
