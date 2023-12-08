@@ -22,6 +22,11 @@ sudo ./xsetup
 
 Xilinx window should appear then click next and agree on all terms after that click next choose the first option "Vitis", then keep clicking next till it starts to install the program 
 
+after installation, the license manager will be opened 
+add your license, then open terminal and type
+cd /tools/Xilinx/xic/scripts
+ sudo ./installAIeDepLibs.sh
+
 4- after the installation is finished, open the Xilinx website and download XRT through the following link
 https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-platforms/archive-vitis-embedded.html 
 and choose the suitable version for your Ubuntu 
