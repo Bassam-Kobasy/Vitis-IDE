@@ -105,7 +105,8 @@ to install petalinux you should follow this guid
 https://docs.xilinx.com/v/u/2019.2-English/ug1144-petalinux-tools-reference-guide 
 *some tips for installing petalinux 
   1- you can install all required packages through this command 
-  sudo apt-get install dos2unix iproute2 gawk make net-tools libncurses5-dev tftpd zlib1g:i386 libssl-dev flex bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo zlib1g-dev gcc-multilib build-essential screen pax gzip python 2.7.5
+ ` sudo apt-get install dos2unix iproute2 gawk make net-tools libncurses5-dev tftpd zlib1g:i386 libssl-dev flex bison libselinux1 gnupg wget diffstat chrpath socat xterm autoconf libtool tar unzip texinfo zlib1g-dev gcc-multilib build-essential screen pax gzip python 2.7.5`
+ 
   2- make sure to make the petalinux-v2019.2-final-installer.run file and the installation dirctory are not root using the following comand 
   
   sudo chown <user>:<user> petalinux-v2019.2-final-installer.run
